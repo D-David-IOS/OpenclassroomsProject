@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuoteRequest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-IF-k3s">
+                                <rect key="frame" x="20" y="20" width="374" height="486"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8B-bx-i2e">
+                                <rect key="frame" x="20" y="656" width="374" height="100"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="c1S-4u-PTv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Nouvelle citation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedNewQuoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rII-PR-3YQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zur-i5-TMF">
+                                <rect key="frame" x="20" y="20" width="374" height="486"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AP-LI-kZw">
+                                <rect key="frame" x="20" y="516" width="374" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z8B-bx-i2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="33f-b9-GY6"/>
+                            <constraint firstItem="Z8B-bx-i2e" firstAttribute="top" secondItem="zur-i5-TMF" secondAttribute="bottom" constant="150" id="3pg-4w-ByZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3AP-LI-kZw" secondAttribute="trailing" constant="20" id="ARD-5l-9EQ"/>
+                            <constraint firstItem="Z8B-bx-i2e" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="H62-QX-GKL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zur-i5-TMF" secondAttribute="trailing" constant="20" id="SiE-HO-wyf"/>
+                            <constraint firstItem="3AP-LI-kZw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TdE-Gb-Yh3"/>
+                            <constraint firstItem="Z8B-bx-i2e" firstAttribute="top" secondItem="3AP-LI-kZw" secondAttribute="bottom" constant="20" id="ZiV-PL-9QX"/>
+                            <constraint firstItem="zur-i5-TMF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZlV-Zh-z0o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GR9-IF-k3s" secondAttribute="trailing" constant="20" id="jaj-co-hVd"/>
+                            <constraint firstItem="3AP-LI-kZw" firstAttribute="top" secondItem="zur-i5-TMF" secondAttribute="bottom" constant="10" id="jdF-QC-hwF"/>
+                            <constraint firstItem="GR9-IF-k3s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ppj-1d-gle"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z8B-bx-i2e" secondAttribute="trailing" constant="20" id="stR-vR-a36"/>
+                            <constraint firstItem="Z8B-bx-i2e" firstAttribute="top" secondItem="GR9-IF-k3s" secondAttribute="bottom" constant="150" id="vCm-Ps-1jY"/>
+                            <constraint firstItem="GR9-IF-k3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wjR-lS-tuP"/>
+                            <constraint firstItem="zur-i5-TMF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yG0-RK-kxJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="3AP-LI-kZw" id="Duh-ZK-fac"/>
+                        <outlet property="imageView" destination="GR9-IF-k3s" id="eTL-9Z-Zj0"/>
+                        <outlet property="newQuoteButton" destination="Z8B-bx-i2e" id="jEj-mr-FWh"/>
+                        <outlet property="quoteLabel" destination="zur-i5-TMF" id="6Y3-TU-Lki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="83.208395802098963"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
